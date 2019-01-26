@@ -1,37 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical"
-    android:background="#3f7cff">
-
+    android:background="#3f7cff"
+    tools:context=".MainActivity">
 
 
        <Button
-           android:layout_width="match_parent"
-           android:layout_height="0dp"
-           android:layout_weight="4"
-           android:text="@string/enter_sycon_2019"
-           android:onClick="Home"
-           android:background="#ff9175"
-           android:layout_margin="20dp"
-           style="@style/Header"/>
-
-       <Button
-           android:layout_width="match_parent"
-           android:layout_height="0dp"
-           android:layout_weight="1"
-           android:text="@string/interested_in_our_past"
-           android:layout_marginBottom="20dp"
-           android:layout_marginLeft="20dp"
-           android:layout_marginRight="20dp"
+           android:id="@+id/button"
            style="@style/Header"
-           android:background="#ff9175"/>
+           android:layout_width="349dp"
+           android:layout_height="258dp"
+           android:layout_marginBottom="8dp"
+           android:layout_marginEnd="8dp"
+           android:layout_marginStart="8dp"
+           android:layout_marginTop="8dp"
+           android:background="@android:color/transparent"
+           android:onClick="Home"
+           android:text="@string/enter_sycon_2019"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.162" />
+
+       <Button
+           android:id="@+id/button2"
+           style="@style/Header"
+           android:layout_width="0dp"
+           android:layout_height="140dp"
+           android:layout_marginBottom="8dp"
+           android:layout_marginEnd="8dp"
+           android:layout_marginStart="8dp"
+           android:layout_marginTop="8dp"
+           android:background="@android:color/transparent"
+           android:text="@string/interested_in_our_past"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="1.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.892" />
 
 
-
-
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>
